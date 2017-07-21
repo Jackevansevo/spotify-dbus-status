@@ -1,7 +1,0 @@
-README.rst
-setup.cfg
-spotify_dbus_status.egg-info/PKG-INFO
-spotify_dbus_status.egg-info/SOURCES.txt
-spotify_dbus_status.egg-info/dependency_links.txt
-spotify_dbus_status.egg-info/entry_points.txt
-spotify_dbus_status.egg-info/top_level.txt

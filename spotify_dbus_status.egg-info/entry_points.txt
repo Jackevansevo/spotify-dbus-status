@@ -1,3 +1,0 @@
-[console_scripts]
-spotify-dbus-status = spotify_dbus_status:main
-
