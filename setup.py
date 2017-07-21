@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="spotify-dbus-status",
-    version="0.1.0",
+    version="0.1.1",
 
     author="Jack evans",
     author_email="jack@evans.gb.net",
