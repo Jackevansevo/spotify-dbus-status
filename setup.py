@@ -4,7 +4,7 @@ setup(
     name="spotify-dbus-status",
     version="0.1.1",
 
-    author="Jack evans",
+    author="Jack Evans",
     author_email="jack@evans.gb.net",
 
     description="Get the current spotify status from cmd line",
