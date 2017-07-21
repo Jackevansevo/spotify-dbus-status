@@ -97,9 +97,9 @@ i3blocks Integration
 
 Add the following section (or similar) to you i3blocks.conf::
 
-[spotify]
-label= 
-command=spotify-dbus-status --template="{artist} - {song}"
-interval=2
-signal=10
-color=#24CF5F
+    [spotify]
+    label= 
+    command=spotify-dbus-status --template="{artist} - {song}"
+    interval=2
+    signal=10
+    color=#24CF5F
