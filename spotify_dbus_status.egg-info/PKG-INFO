@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: spotify-dbus-status
+Version: 0.1.0
+Summary: Get the current spotify status from cmd line
+Home-page: UNKNOWN
+Author: Jack evans
+Author-email: jack@evans.gb.net
+License: MIT
+Description: ===================
+        Dbus-Spotify-Status
+        ===================
+        
+        TODO
+        ====
+        
+        - Make Debian package
+        
+        
+        Requirements
+        ============
+        
+        Requires python3 dbus package::
+        
+            $ sudo apt install python3-dbus
+        
+        
+        Installation
+        ============
+        
+        Install with pip::
+        
+            $ pip install dbus-spotify-status
+        
+            $ python3 -m pip install dbus-spotify-status
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
