@@ -29,10 +29,7 @@ Installation
 
 Install with pip::
 
-    $ pip install dbus-spotify-status
-
-    $ python3 -m pip install dbus-spotify-status
-
+    $ pip install spotify-dbus-status
 
 
 Usage
