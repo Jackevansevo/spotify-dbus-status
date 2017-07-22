@@ -13,7 +13,7 @@ setup(
 
     license='MIT',
 
-    py_modules=['status'],
+    py_modules=['spotify_dbus_status'],
     entry_points={
         'console_scripts': [
             'spotify-dbus-status=spotify_dbus_status:main'
