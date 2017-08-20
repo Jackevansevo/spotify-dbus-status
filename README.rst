@@ -2,12 +2,6 @@
 Dbus-Spotify-Status
 ===================
 
-TODO
-====
-
-- Make Debian package
-
-
 .. class:: no-web
 
     .. image:: https://raw.githubusercontent.com/Jackevansevo/spotify-dbus-status/master/screenshot.png
@@ -21,7 +15,7 @@ Requirements
 
 Requires python3 dbus package::
 
-    $ sudo apt install python3-dbus
+    λ sudo apt install python3-dbus
 
 
 Installation
@@ -29,8 +23,7 @@ Installation
 
 Install with pip::
 
-    $ pip install spotify-dbus-status
-
+    λ pip install spotify-dbus-status
 
 Usage
 =====
