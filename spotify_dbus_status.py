@@ -59,13 +59,13 @@ def main():
     data = dict()
 
     if args.artist:
-        data['artist'] = str(next(iter(metadata.get('xesam:albumArtist'))))
+        data['artist'] = next(iter(metadata.get('xesam:albumArtist'))).encode('utf-8')
 
     if args.song:
-        data['song'] = str(metadata.get('xesam:title'))
+        data['song'] = metadata.get('xesam:title').encode('utf-8')
 
     if args.album:
-        data['album'] = str(metadata.get('xesam:album'))
+        data['album'] = metadata.get('xesam:album').encode('utf-8')
 
     formatters = {
         'json': lambda d: stdout.write(json.dumps(d)),
