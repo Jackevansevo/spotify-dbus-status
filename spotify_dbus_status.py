@@ -52,18 +52,21 @@ def main():
         template_strings = (flag for flag in data_flags if getattr(args, flag))
 
         # Create a template string "{artist} {song} ..."
-        args.template = args.sep.join(["{" + flag + "}" for flag in template_strings])
+        args.template = args.sep.join(
+            ["{" + flag + "}" for flag in template_strings]
+        )
 
     data = dict()
 
     if args.artist:
-        data["artist"] = next(iter(metadata.get("xesam:albumArtist"))).encode("utf-8")
+        artist_data = metadata.get("xesam:albumArtist")
+        data["artist"] = next(iter(artist_data))
 
     if args.song:
-        data["song"] = metadata.get("xesam:title").encode("utf-8")
+        data["song"] = metadata.get("xesam:title")
 
     if args.album:
-        data["album"] = metadata.get("xesam:album").encode("utf-8")
+        data["album"] = metadata.get("xesam:album")
 
     formatters = {
         "json": lambda d: stdout.write(json.dumps(d)),
