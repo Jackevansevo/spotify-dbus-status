@@ -1,8 +1,10 @@
+import json
 from argparse import ArgumentParser
-from sys import stdout, argv
+from sys import argv, stdout
+
+import pkg_resources
 
 import dbus
-import json
 
 session_bus = dbus.SessionBus()
 
@@ -17,6 +19,9 @@ def main():
 
     formats = ("json", "str")
     parser = ArgumentParser()
+    parser.add_argument(
+        "-v", "--version", action="store_true", help="show version"
+    )
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--artist", action="store_true")
     parser.add_argument("--song", action="store_true")
@@ -26,6 +31,11 @@ def main():
     parser.add_argument("--template")
 
     args = parser.parse_args()
+
+    if args.version:
+        version = pkg_resources.require("spotify-dbus-status")[0].version
+        print(version)
+        return
 
     data_flags = ("artist", "song", "album")
 

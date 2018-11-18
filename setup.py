@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="spotify-dbus-status",
-    version="0.1.3",
+    version="0.1.4",
     url="https://github.com/Jackevansevo/spotify-dbus-status",
     author="Jack Evans",
     author_email="jack@evans.gb.net",
@@ -10,7 +10,9 @@ setup(
     long_description=open("README.rst").read(),
     license="MIT",
     py_modules=["spotify_dbus_status"],
-    entry_points={"console_scripts": ["spotify-dbus-status=spotify_dbus_status:main"]},
+    entry_points={
+        "console_scripts": ["spotify-dbus-status=spotify_dbus_status:main"]
+    },
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Programming Language :: Python",
