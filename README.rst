@@ -97,6 +97,6 @@ Add the following section (or similar) to you i3blocks.conf::
 Contributor Thanks
 ==================
 
-- francois-contat_. : fixing utf-8 support
+- francois-contat_ : fixing utf-8 support
 
 .. _francois-contat: https://github.com/francois-contat
