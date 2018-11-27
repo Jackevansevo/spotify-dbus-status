@@ -93,3 +93,10 @@ Add the following section (or similar) to you i3blocks.conf::
     interval=2
     signal=10
     color=#24CF5F
+
+Contributor Thanks
+==================
+
+- francois-contat_. : fixing utf-8 support
+
+.. _francois-contat: https://github.com/francois-contat
