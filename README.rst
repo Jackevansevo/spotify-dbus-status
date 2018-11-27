@@ -13,9 +13,9 @@ Dbus-Spotify-Status
 Requirements
 ============
 
-Requires python3 dbus package::
+Requires OS level python dbus package::
 
-    λ sudo apt install python3-dbus
+    λ sudo apt install python[3]-dbus
 
 
 Installation
