@@ -86,8 +86,8 @@ def main():
         data["album"] = metadata.get("xesam:album")
 
     formatters = {
-        "json": lambda d: stdout.write(json.dumps(d)),
-        "str": lambda d: stdout.write(args.template.format(**data)),
+        "json": lambda d: stdout.write(json.dumps(d, ensure_ascii=False)),
+        "str": lambda d: stdout.write(args.template.format(**d)),
     }
 
     formatters.get(args.format)(data)
