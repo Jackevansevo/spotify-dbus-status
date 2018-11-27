@@ -12,7 +12,7 @@ bus_data = ("org.mpris.MediaPlayer2.spotify", "/org/mpris/MediaPlayer2")
 spotify_bus = session_bus.get_object(*bus_data)
 
 interface = dbus.Interface(spotify_bus, "org.freedesktop.DBus.Properties")
-metadata = interface.Get("org.mpris.MediaPlayer2.Player", "Metadata")
+metadata = interface.Get("org.mpris.MediaPlayer2.Player", "Metadata", utf8_strings=True)
 
 
 def main():
